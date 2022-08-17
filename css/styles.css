@@ -791,7 +791,9 @@ img {
 }
 
 .buttom-close {
-	display: block;
+	width: 30px;
+	height: 30px;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: absolute;
@@ -801,11 +803,10 @@ img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: transparent;
 	cursor: pointer;
-	color: var(--text-hover-color);
 }
 
-.buttom-close-icon:hover {
-	color: var(--text-hover-color);
+.buttom-close:hover {
+	fill: var(--text-hover-color);
 }
 
 .is-hidden {
@@ -868,6 +869,7 @@ img {
 	border-radius: 4px;
 	padding: 12px 16px;
 	outline: transparent;
+	resize: none;
 }
 
 .modal-text:focus {
@@ -875,7 +877,10 @@ img {
 }
 
 .modal-btn {
+	width: 200px;
 	position: absolute;
+	align-items: center;
+	justify-content: center;
 	left: 50%;
 	transform: translateX(-50%);
 	font-family: inherit;
@@ -922,6 +927,7 @@ img {
 .check-text {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
